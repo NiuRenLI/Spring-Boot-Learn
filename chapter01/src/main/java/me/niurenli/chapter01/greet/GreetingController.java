@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * RESTful Web Service Controller
- * 和普通MVC控制器最大区别是：返回不同。前者返回资源类对象，后者返回视图
+ * 和普通MVC控制器最大区别是：返回不同。前者返回资源类对象（@RestController），后者返回视图（@Controller）
  */
 @RestController
 public class GreetingController {

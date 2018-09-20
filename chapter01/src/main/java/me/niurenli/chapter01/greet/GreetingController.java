@@ -17,7 +17,7 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();//线程安全
 
     @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value = "name", defaultValue = "Word") String name) {
+    public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
     }
 }
